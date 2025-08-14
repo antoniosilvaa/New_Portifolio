@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    background-image: url('https://52df751a.delivery.rocketcdn.me/wp-content/uploads/2022/12/Will-web-development-die-in-10-years-1.jpg');
+    background-size: cover;
+}
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+a {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+}
+a.linkIndicador {
+    color: #007bff;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    grid-column: auto;
+    margin: 5px;  
+}
+li {
+    display: inline;
+    margin: 15px; 
+}
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+header:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.container {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+
+}
+.projeto {
+    width: 45%;                 
+    border-radius: 10px;
+    overflow: hidden;           
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px; 
+    transition: transform 0.3s ease; 
+}
+.projeto img {
+    max-width: 100%;
+    height: auto;
+   display: block;
+}
+.projeto:hover {
+    transform: scale(1.05);
+}
+.projeto h1 {
+    text-align: center;
+    color: whitesmoke;
+    margin: 10px 0;
+}
+.projeto p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.skills {
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.skills h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.skills-track {
+    overflow: hidden;
+    width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    animation: scrollSkills 20s linear infinite;
+    width: max-content; 
+    padding: 5px 0;
+}
+
+.skills-container img {
+    width: 60px; 
+    height: auto;
+    border-radius: 8%;
+    transition: transform 0.3s ease;
+}
+
+.skills-container img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scrollSkills {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.contact {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    margin-top: 20px;
+    
+}
+.contact h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+.contact:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
